@@ -34,3 +34,8 @@ UPDATE AddressBookTable SET Phonenum=97456638984 WHERE FirstName='Shubham';
 UPDATE AddressBookTable SET LastName='Maske' WHERE FirstName='Prajwal';cle
 UPDATE AddressBookTable SET EmailId='kumar12@gmail.com' WHERE LastName='Khanse';
 select * from AddressBookTable;
+
+#UC5 --Delete contact using their name---
+
+DELETE FROM AddressBookTable WHERE FirstName='Megha';
+SELECT * FROM AddressBookTable;
