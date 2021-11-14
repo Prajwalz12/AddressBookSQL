@@ -27,3 +27,10 @@ INSERT  AddressBookTable VALUES('Shubham','Mule','Kotul','Akole','Maharashtra',4
 ('Prajwal','Zurunge','Chandannagar','Vimannagar','PPPP',555555,9876543322,'prajwal@gmail.com');
 --Retrieve all data from AddressBookTable--
 SELECT * FROM AddressBookTable;
+
+#UC4 --Edit contact using their name--
+
+UPDATE AddressBookTable SET Phonenum=97456638984 WHERE FirstName='Shubham';
+UPDATE AddressBookTable SET LastName='Maske' WHERE FirstName='Prajwal';cle
+UPDATE AddressBookTable SET EmailId='kumar12@gmail.com' WHERE LastName='Khanse';
+select * from AddressBookTable;
