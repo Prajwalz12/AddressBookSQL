@@ -44,3 +44,7 @@ SELECT * FROM AddressBookTable;
 
 SELECT FirstName FROM  AddressBookTable WHERE City='Mumbai' or StateName='Maharashtra';
 
+UC7---Size or count by city and state---
+
+SELECT COUNT(City) AS Size,City,StateName FROM AddressBookTable GROUP BY StateName,City;
+
