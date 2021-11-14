@@ -31,7 +31,7 @@ SELECT * FROM AddressBookTable;
 #UC4 --Edit contact using their name--
 
 UPDATE AddressBookTable SET Phonenum=97456638984 WHERE FirstName='Shubham';
-UPDATE AddressBookTable SET LastName='Maske' WHERE FirstName='Prajwal';cle
+UPDATE AddressBookTable SET LastName='Maske' WHERE FirstName='Prajwal';
 UPDATE AddressBookTable SET EmailId='kumar12@gmail.com' WHERE LastName='Khanse';
 select * from AddressBookTable;
 
@@ -39,3 +39,8 @@ select * from AddressBookTable;
 
 DELETE FROM AddressBookTable WHERE FirstName='Megha';
 SELECT * FROM AddressBookTable;
+
+#UC6 --Retrieve person's City--
+
+SELECT FirstName FROM  AddressBookTable WHERE City='Mumbai' or StateName='Maharashtra';
+
