@@ -48,3 +48,14 @@ UC7---Size or count by city and state---
 
 SELECT COUNT(City) AS Size,City,StateName FROM AddressBookTable GROUP BY StateName,City;
 
+UC8-----sort name entries based on city */
+Insert into ContactsTable(FirstName,LastName,Address,City,State,ZipCode,PhoneNumber,EmailId) values 
+('Raju','S','near store','Mumbai','Maharashtra',400092,'7895553330','rajus@mail.com'),
+('Ketan','L','near school','Mumbai','Maharashtra',400089,'9877553030','ketanl@mail.com'),
+('Nitya','P','Kalina','Mumbai','Maharashtra',400098,'7733400300','nityap@mail.com');
+SELECT * from ContactsTable
+
+SELECT * FROM ContactsTable WHERE City = 'Mumbai' ORDER BY FirstName ASC;	--ascending
+SELECT * FROM ContactsTable WHERE City = 'Mumbai' ORDER BY FirstName DESC;	--descending
+
+
